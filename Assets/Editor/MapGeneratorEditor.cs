@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-using Assets.Resources.Script.Monobehaviour;
+using Assets.Resources.Script.Monobehaviour.Generator;
 
 [CustomEditor (typeof (MapGenerator))]
 public class MapGeneratorEditor : Editor
@@ -14,13 +14,13 @@ public class MapGeneratorEditor : Editor
         {
             if(mapGenerator.autoUpdate)
             {
-                mapGenerator.GenerateMap();
+                mapGenerator.DrawMapInEditor();
             }
         }
 
         if(GUILayout.Button("Generate"))
         {
-            mapGenerator.GenerateMap();
+            mapGenerator.DrawMapInEditor();
         }
     }
 }

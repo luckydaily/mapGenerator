@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace Assets.Resources.Script.Monobehaviour
+namespace Assets.Resources.Script.Monobehaviour.Generator
 {
     public static class TextureGenerator
     {
